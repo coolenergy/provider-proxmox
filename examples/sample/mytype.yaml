@@ -1,0 +1,9 @@
+apiVersion: sample.proxmox.crossplane.io/v1alpha1
+kind: Proxmox
+metadata:
+  name: example
+spec:
+  forProvider:
+    configurableField: test
+  providerConfigRef:
+    name: example

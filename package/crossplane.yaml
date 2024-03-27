@@ -1,0 +1,14 @@
+apiVersion: meta.pkg.crossplane.io/v1alpha1
+kind: Provider
+metadata:
+  name: provider-proxmox
+  annotations:
+    meta.crossplane.io/maintainer: Crossplane Maintainers <info@crossplane.io>
+    meta.crossplane.io/source: github.com/crossplane/provider-proxmox
+    meta.crossplane.io/license: Apache-2.0
+    meta.crossplane.io/description: |
+      A proxmox that can be used to create Crossplane providers.
+
+spec:
+  controller:
+    image: DOCKER_REGISTRY/provider-proxmox-controller:VERSION
